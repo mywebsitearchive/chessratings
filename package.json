@@ -1,0 +1,21 @@
+{
+  "name": "sovellusohjelmointi-2-harjoitustyo",
+  "version": "1.0.0",
+  "description": "Tämä on repository Sovellusohjelmointi 2 -opintojakson oppimistehtävän palautukseen.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "npm install && npx prisma generate"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prisma": "^5.22.0"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.22.0",
+    "cors": "^2.8.5",
+    "express": "^5.2.1"
+  }
+}

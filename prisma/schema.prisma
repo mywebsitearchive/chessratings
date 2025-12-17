@@ -1,0 +1,21 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+model Haku {
+  id            Int     @id @default(autoincrement())
+  aikaleima     Int
+  nimi1         String
+  variant1      Int
+  maxRating1    Int
+  nimi2         String
+  variant2      Int
+  maxRating2    Int
+}
